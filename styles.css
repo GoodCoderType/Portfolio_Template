@@ -1,0 +1,276 @@
+
+html {
+    cursor: none
+  }
+    :root {
+        --neon-blue: #4facfe;
+        --neon-pink: #ff6b6b;
+        --matrix-green: #00ff00;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        overflow: hidden; 
+        width: 100%;
+       
+        height: 100%;
+    }
+
+    body {
+        font-family: 'Courier New', monospace;
+        background: #0a0a0a;
+        color: #fff;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        height: 100vh;
+        overflow-y: auto; 
+        scrollbar-width: none; 
+        -ms-overflow-style: none;
+    }
+
+    .container::-webkit-scrollbar {
+        display: none; 
+    }
+
+    .cyber-border {
+        position: fixed;
+        z-index: 1000;
+        background: linear-gradient(45deg, var(--neon-blue), var(--neon-pink));
+    }
+
+    .cyber-border.top { top: 0; left: 0; right: 0; height: 3px; }
+    .cyber-border.right { top: 0; right: 0; bottom: 0; width: 3px; }
+    .cyber-border.bottom { bottom: 0; left: 0; right: 0; height: 3px; }
+    .cyber-border.left { top: 0; left: 0; bottom: 0; width: 3px; }
+
+    .matrix-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+        z-index: -1;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 4rem 0;
+        position: relative;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 3px solid var(--neon-blue);
+        box-shadow: 0 0 30px var(--neon-blue);
+        margin-bottom: 2rem;
+        transition: transform 0.3s;
+    }
+
+    .profile-img:hover {
+        transform: rotate(5deg) scale(1.1);
+    }
+
+    .cyber-title {
+        font-size: 3rem;
+        background: linear-gradient(45deg, var(--neon-blue), var(--neon-pink));
+
+        text-shadow: 0 0 10px rgba(79, 172, 254, 0.5);
+        margin-bottom: 1rem;
+    }
+
+    .section {
+        background: rgba(0, 0, 0, 0.8);
+        border: 1px solid var(--neon-blue);
+        padding: 2rem;
+        margin: 2rem 0;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+
+    .project-card {
+        background: #111;
+        padding: 1.5rem;
+        border: 1px solid var(--neon-blue);
+        border-radius: 5px;
+        transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+    }
+
+    .social-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        background: #111;
+        border: 1px solid var(--neon-blue);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all 0.3s;
+    }
+
+    .social-link:hover {
+        background: var(--neon-blue);
+        box-shadow: 0 0 15px var(--neon-blue);
+    }
+
+    .glow-text {
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    body {
+        background: url("https://images-ext-1.discordapp.net/external/7tU2Eh1Tyrc6PxcGVhr9fCOcwL6AAEHG2C0iF40-cBA/%3Fcid%3D38d97c99p4zswfrcwwxl9dolpdzy04jzeomnsri9fkfbtki4%26ep%3Dv1_gifs_search%26rid%3Dgiphy.gif%26ct%3Dg/https/media3.giphy.com/media/U3qYN8S0j3bpK/giphy.gif?width=469&height=663");
+        width: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        cursor: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; 
+    }
+
+    .custom-cursor {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background: url('static/curser.png') no-repeat center center;
+      background-size: contain;
+      z-index: 1000;
+      animation: float 0.3s infinite ease-in-out;
+  }
+
+
+
+    @keyframes float {
+        0%, 100% { transform: translate(-50%, -50%) scale(1); }
+        50% { transform: translate(-50%, -50%) scale(1.1); }
+    }
+
+    @keyframes fadeOut {
+        0% { opacity: 1; transform: scale(1); }
+        100% { opacity: 0; transform: scale(0.5); }
+    }
+    
+
+.custom-cursor {
+    position: absolute; 
+    width: 35px;
+    height: 35px;
+    pointer-events: none;
+    background: url('static/curser.png') no-repeat center center;
+    background-size: contain;
+    z-index: 1000;
+    transition: transform 0.1s ease-out; 
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(-2px);
+    }
+    50% {
+        transform: translateY(2px);
+    }
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    font-weight: bold; 
+    font-size: 18px; 
+}
+
+.cyber-title {
+    font-size: 3.5rem; 
+}
+
+.glow-text {
+    font-size: 1.5rem; 
+}
+
+    @keyframes glow {
+        from { text-shadow: 0 0 10px var(--neon-blue); }
+        to { text-shadow: 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue); }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 1rem;
+        }
+
+        .cyber-title {
+            font-size: 2rem;
+        }
+    }
+    .top-bar {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .github-link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: linear-gradient(135deg, #41829f, #0f2027, #203a43);
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .github-link img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .music-btn {
+        width: 40px;
+        height: 40px;
+        background: #4facfe;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 0 10px #4facfe;
+    }
+
+    .music-btn:hover {
+        transform: scale(1.1);
+    }

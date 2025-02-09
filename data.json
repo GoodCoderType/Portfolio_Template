@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "GoodCoderType Portfolio",
+    "description": "Check the portfolio of python developer. See projects. Social Links. Contact Links. About Me.",
+    "image": "static/avatar.png",
+    "url": "https://www.goodgamertype.info",
+    "background": "https://media3.giphy.com/media/U3qYN8S0j3bpK/giphy.gif?cid=38d97c99p4zswfrcwwxl9dolpdzy04jzeomnsri9fkfbtki4&ep=v1_gifs_search&rid=giphy.gif"
+  },
+  "profile": {
+    "image": "static/avatar.png",
+    "name": "GoodCoderType",
+    "description": "Owner/Dev of raftar.xyz. Python Discord Bot Developer. Learning Multiple Things."
+  },
+  "about": {
+    "title": "🚀 About Me",
+    "content": "Hi! I am goodcodertype. The owner of raftar.xyz. I am a python discord bot developer. I also make projects for fun. learning multiple things."
+  },
+  "projects": [
+    {
+      "title": "Raftar.xyz",
+      "description": "Discord User App + Guild App With Over 6000 User Installs And 180 Guild Installs. Totally Free.",
+      "link": "https://raftar.xyz"
+    }
+  ],
+  "socialLinks": [
+    {
+      "name": "GitHub",
+      "logo": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+      "link": "https://github.com/goodcodertype"
+    },
+    {
+      "name": "Twitter",
+      "logo": "https://cdn-icons-png.flaticon.com/512/733/733579.png",
+      "link": "https://twitter.com/goodcodertype"
+    },
+    {
+      "name": "Instagram",
+      "logo": "https://cdn.discordapp.com/emojis/1288449548791976030.png",
+      "link": "https://instagram.com/goodcodertype1"
+    },
+    {
+      "name": "@goodgamerback",
+      "logo": "https://cdn.discordapp.com/emojis/1207966282461347860.gif",
+      "link": "https://discord.gg/CeRHE88CRZ"
+    }
+  ],
+  "contact": [
+    {
+      "type": "Email",
+      "value": "goodgamerontop@gmail.com"
+    },
+    {
+      "type": "Discord Account",
+      "value": "@goodgamerback"
+    }
+  ]
+}
